@@ -1,0 +1,38 @@
+:root {
+  --aspect-ratio: 1.6;
+  --black: #17141d;
+  --cream: #ffdead;
+  --white: #ededf1;
+  --gray-light: #cac8d0;
+  --accent: #ffa500;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--black);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--white);
+}
+img {
+  max-width: 100%;
+}
+article {
+  line-height: 2rem;
+
+  &.post-content {
+    p {
+      font-size: 1.25rem;
+    }
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+}
